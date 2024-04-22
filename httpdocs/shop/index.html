@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Bestellformular</title>
+</head>
+<body>
+  <h1>di:art Webshop</h1>
+  <p>Herzlich willkommen auf unserem Webshop.</p>
+  <form action="bestellen.php" method="post">
+    <p>Wähle bitte die Anzahl der gewünschten Produkte aus:</p> 
+    <table>
+      <tr>
+        <th>Produkt</th>
+        <th>Anzahl</th>
+      </tr>
+      <tr>
+        <td>Produkt 1</td>
+        <td><input type="number" name="produkt1" min="0" value="0"></td>
+      </tr>
+      <tr>
+        <td>Produkt 2</td>
+        <td><input type="number" name="produkt2" min="0" value="0"></td>
+      </tr>
+      <tr>
+        <td>Produkt 3</td>
+        <td><input type="number" name="produkt3" min="0" value="0"></td>
+      </tr>
+    </table>
+    <p>Die Lieferadresse lautet:</p>
+    <label for="name">Vorname Name:</label>
+    <input type="text" id="name" name="name" required />
+    <br>
+    <label for="name">Adresse:</label>
+    <input type="text" id="address" name="address" required />
+    <br>
+    <label for="name">PLZ:</label>
+    <input type="text" id="code" name="code" required />
+    <label for="name">Ort:</label>
+    <input type="text" id="city" name="city" required />
+    <p>Nachdem du die Produkte ausgewählt und die Lieferadresse eingegeben hast, drücke auf <button type="submit">Weiter</button>.</p>
+  </form>
+</body>
+</html>
